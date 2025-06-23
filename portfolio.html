@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+    <header class="top-bar">
+        <div class="brand-name">Dhilipkumar K.</div>
+        <a href="resume.pdf" target="_blank" class="resume-button">📄 Resume</a>
+    </header>
+    <section>
+      <ul type="none" class="nav-list_fixed">
+                    <li class="nav-about" onclick="scrollto(0)" ></li>
+                    <li class="nav-skills" onclick="scrollto(1)"></li>
+                    <li class="nav-projects" onclick="scrollto(2)"></li>
+                    <li class="nav-contact" onclick="scrollto(3)"></li>
+
+                </ul>
+        <div id="overlayN" class="overlay">
+            <div>
+                <h1>NutriTrack</h1>
+                <p>
+                    NutriTrack Summary (based on your project idea):
+                    A digital food tracking system for students
+
+                    Students order food; the system tracks healthy vs. unhealthy choices
+
+                    Each student has a health index that goes up/down based on choices
+
+                    If a student's health index drops below a threshold, management gets notified
+
+                    Built with dropdowns, student ID, food input, and machine learning backend
+                </p>
+                <button id="closeOverlay" class="closeOverlay">X</button>
+            </div>
+        </div>
+        <div id="overlayS" class="overlay">
+            <div>
+                <h1>SafeNest</h1>
+                <p>
+                    SafeNest is a smart travel and relocation assistant designed to help individuals make safer decisions when exploring new places.
+                    Whether you're touring a city or moving permanently, SafeNest analyzes crime data to recommend safe hotels, 
+                    restaurants, and neighborhoods. By highlighting low-crime zones and avoiding risky areas, 
+                    it empowers users to travel or relocate with greater confidence. 
+                    With a clean interface and location-aware suggestions, SafeNest prioritizes personal safety and comfort through smart, data-driven guidance.
+                </p>
+                <button id="closeOverlay" class="closeOverlay">X</button>
+            </div>
+        </div>
+        <div class="non-movable">
+            <div class="profile">
+                <img src="images/aquarium.jpg" alt="Logo" style="width: 300px; height: 300px;" class="profile-pic"/>
+                <h1>Dhilipkumar Kolasanakota</h1>
+                <h3>Full Stack Python Developer</h3>
+                <par>
+                    Currently, Student
+                    at<b> Rajiv Gandhi University of Knowledge Technologies,
+                    ongole</b>.
+                </par>
+            </div>
+            <div class="nav-movable">
+                <ul type="none" class="nav-list">
+                    <li id="nav-about"  onclick="scrollto(0)">About</li>
+                    <li id="nav-skills" onclick="scrollto(1)">Skills</li>
+                    <li id="nav-projects" onclick="scrollto(2)">Projects</li>
+                    <li id="nav-contact" onclick="scrollto(3)">Contact</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="movable" id="movable">
+            <div id="section-about">
+                <h2>About Me</h2>
+                <p class="about-me">
+                    Hello! My name is Dhilipkumar Kolasanakota.
+                    I am a Full Stack Python Developer with a passion for creating dynamic and responsive web applications.
+                    I have experience in both front-end and back-end development,
+                    and I enjoy working on projects that challenge my skills and allow me to learn new technologies.
+                </p>
+            </div>
+            <div id="section-skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li><p class="skills-name">R Programming</p></li>
+                    <li><p class="skills-name">Mernstack</p></li>
+                    <li><p class="skills-name">CSS</p></li>
+                    <li><p class="skills-name">C Programming</p></li>
+                    <li><p class="skills-name">HTML</p></li>
+                    <li><p class="skills-name">Java</p></li>
+                </ul>
+            </div>
+            <div id="section-projects">
+                <h2>Projects</h2>
+                <ul class="skills-list projects-list">
+                    <li class="projects" id="nutri"><img src="images/safenest.jpg" class="project-pic"><br><span >Click for more Details</span><br><p class="project-name">SafeNest</p></li>
+                    <li class="projects" id="safe"><img src="images/NutriTrack.png" class="project-pic"><br><span>Click for more Details</span><br><p class="project-name">NutriTrack</p></li>
+                    
+                </ul>
+            </div>
+            <div id="section-contact" class="contact">
+                <h2>Contact Me</h2>
+                <p><i class="fas fa-envelope"></i>dhilipkumarkolasanakota@gmail.com</p>
+                <p><i class="fab fa-linkedin"></i>linkedin.com/in/dhilipkumarkolasanakota</p>
+                <p><i class="fab fa-github"></i>github.com/dhilipkumar9603</p>
+                <p><i class="fab fa-instagram"></i>instagram.com/dhilipkumar9603</p>
+                <p><i class="fas fa-phone"></i>+91 6300094389</p>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Dhilipkumar Kolasanakota. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+    
+</body>
+</html>
